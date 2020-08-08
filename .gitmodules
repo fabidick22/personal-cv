@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:fabidick22/fabidick22.github.io.git
 	branch = master
+[submodule "themes/hugo-orbit-theme"]
+	path = themes/hugo-orbit-theme
+	url = git@github.com:fabidick22/hugo-orbit-theme.git
