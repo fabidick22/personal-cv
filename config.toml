@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://example.org/"
+baseurl = "https://fabidick22.github.io/"
 languageCode = "en-us"
 title = "Dickson Armijos Resume"
 theme = "hugo-orbit-theme"
