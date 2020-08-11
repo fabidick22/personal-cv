@@ -12,52 +12,78 @@ disableSitemap = true
 disable404 = true
 
 [params]
-
-# Meta
-description = "Hugo Responsive Resume/CV Theme for Developers"
-author = "Pavel Kanyshev"
-
-# Theme styles
-
-# The original template comes with 6 colour schemes. You may choose styles below.
-# "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
-# are available. Also the source LESS files are included so
-# it’s quick and easy to change the styling and colour scheme.
-
-styles = "styles.css"
+    styles = "styles.css"
 
 # Sidebar sections
 
 # Profile section
 [params.profile]
-name = "Dickson Armijos R."
-tagline = "Full Stack Developer"
-avatar = "profile.jpeg"
+    name = "Dickson Armijos R."
+    tagline = "Full Stack Developer"
+    avatar = "profile.jpeg"
 
 # Contact section
 [params.contact]
-enable = true
+    enable = true
 
 [[params.contact.list]]
-class = "email"
-icon = "fa-envelope"
-url = "mailto: fabidick22@hotmail.es"
-title = "fabidick22@hotmail.es"
+    class = "email"
+    icon = "fa-envelope"
+    url = "mailto: fabidick22@hotmail.es"
+    title = "fabidick22@hotmail.es"
 
 [[params.contact.list]]
-class = "linkedin"
-icon = "fa-linkedin"
-url = "//linkedin.com/in/fabidick22"
-title = "Dickson A."
+    class = "linkedin"
+    icon = "fa-linkedin"
+    url = "//linkedin.com/in/fabidick22"
+    title = "Dickson A."
 
 [[params.contact.list]]
-class = "github"
-icon = "fa-github"
-url = "//github.com/fabidick22"
-title = "fabidick22"
+    class = "github"
+    icon = "fa-github"
+    url = "//github.com/fabidick22"
+    title = "fabidick22"
 
 [[params.contact.list]]
-class = "twitter"
-icon = "fa-twitter"
-url = "//twitter.com/fabidick"
-title = "@fabidick"
+    class = "twitter"
+    icon = "fa-twitter"
+    url = "//twitter.com/fabidick"
+    title = "@fabidick"
+
+[languages]
+
+#####################
+## English Version ##
+#####################
+[languages.en]
+    [languages.en.params]
+        author = "fabidick22"
+        title = "Dickson Armijos Resume"
+        description = "Dickon Armijos resume/cv created with Hugo"
+
+    [languages.en.params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+
+#####################
+## Spanish Version ##
+#####################
+[languages.es]
+    [languages.es.params]
+        author = "fabidick22"
+        title = "Currículum de Dickon Armijos"
+        description = "Currículum de Dickon Armijos creado con Hugo"
+
+    [languages.es.params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Perfil"
+        summary = "**Resume de tu carrera aquí** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+
+
+[params.footer]
+    copyright = "Dickson Armijos"
