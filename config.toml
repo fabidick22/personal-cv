@@ -3,7 +3,9 @@
 baseurl = "https://fabidick22.github.io/"
 languageCode = "en-us"
 title = "Dickson Armijos Resume"
-theme = "hugo-orbit-theme"
+theme = "themes/hugo-orbit-theme"
+themesDir = "."
+#staticDir = "."
 googleAnalytics = "UA-XXXXXXX-Y"
 
 # Do not build files for websites. Need them? Set to false
