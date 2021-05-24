@@ -144,6 +144,41 @@ disable404 = true
     level = "Native"
 
 
+# References section
+[languages.en.params.references]
+    enable = true
+    title = "References"
+[languages.es.params.references]
+    enable = true
+    title = "References"
+
+[[languages.en.params.references.list]]
+    name = "Eng. Lucrecia M. Amenta Manzo"
+    email = "manzolu.93@gmail.com"
+    phone = "+54 9223 5506550"
+[[languages.es.params.references.list]]
+    name = "Ing. Lucrecia M. Amenta Manzo"
+    email = "manzolu.93@gmail.com"
+    phone = "+54 9223 5506550"
+
+[[languages.en.params.references.list]]
+    name = "Eng. Nicholas Earley"
+    email = "nspalding@ioet.com"
+    phone = "+593 97 935 1405"
+[[languages.es.params.references.list]]
+    name = "Ing. Nicholas Earley"
+    email = "nspalding@ioet.com"
+    phone = "+593 97 935 1405"
+
+[[languages.en.params.references.list]]
+    name = "Eng. Rommel Macas"
+    email = "rlmacas@cidsecure.com"
+    phone = "+593 98 463 0519"
+[[languages.es.params.references.list]]
+    name = "Ing. Rommel Macas"
+    email = "rlmacas@cidsecure.com"
+    phone = "+593 98 463 0519"
+
 # Interests section
 [languages.en.params.interests]
     enable = true
@@ -183,11 +218,12 @@ disable404 = true
 [[languages.en.params.downloads.list]]
     name = "CV / Resume"
     icon = "fa-file-pdf-o"
-    filepath = "/path/to/resume.pdf"
+    filepath = "resume_en.pdf"
 [[languages.es.params.downloads.list]]
-    name = "CV / Resume"
+    name = "CV / Currículum "
     icon = "fa-file-pdf-o"
-    filepath = "/path/to/resume.pdf"
+    filepath = "resume_es.pdf"
+
 
 # Main body sections
 # Summary section
