@@ -1,91 +1,500 @@
 # Page settings
-
 baseurl = "https://fabidick22.github.io/"
 languageCode = "en-us"
 title = "Dickson Armijos Resume"
 theme = "themes/hugo-orbit-theme"
 themesDir = "."
-#staticDir = "."
 googleAnalytics = "UA-XXXXXXX-Y"
 
-# Do not build files for websites. Need them? Set to false
 disableRSS = true
 disableSitemap = true
 disable404 = true
 
-[params]
+[languages]
+[languages.en]
+[languages.en.params]
+    # Meta
+    author = "fabidick22"
+    title = "Dickson Armijos Resume"
+    description = "Dickon Armijos resume/cv created with Hugo"
+    favicon = "custom-favicon.ico"
+    keywords = ['AWS', 'Terraform', 'Ansible', 'CloudFormation', 'Python', 'Shell Script', 'Docker', 'K8s', 'Git',
+        'GitHub Actions', 'SonarQube', 'OWASP Top 10', 'Azure', 'GCP']
+    styles = "styles.css"
+[languages.es.params]
+    # Meta
+    author = "fabidick22"
+    title = "Currículo de Dickson Armijos"
+    description = "Dickon Armijos resume/cv created with Hugo"
+    favicon = "custom-favicon.ico"
+    keywords = ['AWS', 'Terraform', 'Ansible', 'CloudFormation', 'Python', 'Shell Script', 'Docker', 'K8s', 'Git',
+        'GitHub Actions', 'SonarQube', 'OWASP Top 10', 'Azure', 'GCP']
     styles = "styles.css"
 
 # Sidebar sections
-
 # Profile section
-[params.profile]
+[languages.en.params.profile]
     name = "Dickson Armijos R."
-    tagline = "Full Stack Developer"
+    tagline = "Software Engineer"
+    avatar = "profile.jpeg"
+[languages.es.params.profile]
+    name = "Dickson Armijos R."
+    tagline = "Ingeniero en Sistemas Informáticos y Computación"
     avatar = "profile.jpeg"
 
 # Contact section
-[params.contact]
+[languages.en.params.contact]
+    enable = true
+[languages.es.params.contact]
     enable = true
 
-[[params.contact.list]]
+[[languages.en.params.contact.list]]
     class = "email"
     icon = "fa-envelope"
-    url = "mailto: fabidick22@hotmail.es"
+    url = "mailto:fabidick22@hotmail.es"
+    title = "fabidick22@hotmail.es"
+[[languages.es.params.contact.list]]
+    class = "email"
+    icon = "fa-envelope"
+    url = "mailto:fabidick22@hotmail.es"
     title = "fabidick22@hotmail.es"
 
-[[params.contact.list]]
+[[languages.en.params.contact.list]]
     class = "linkedin"
     icon = "fa-linkedin"
     url = "//linkedin.com/in/fabidick22"
-    title = "Dickson A."
+    title = "in/fabidick22"
+[[languages.es.params.contact.list]]
+    class = "linkedin"
+    icon = "fa-linkedin"
+    url = "//linkedin.com/in/fabidick22"
+    title = "in/fabidick22"
 
-[[params.contact.list]]
+[[languages.en.params.contact.list]]
+    class = "github"
+    icon = "fa-github"
+    url = "//github.com/fabidick22"
+    title = "fabidick22"
+[[languages.es.params.contact.list]]
     class = "github"
     icon = "fa-github"
     url = "//github.com/fabidick22"
     title = "fabidick22"
 
-[[params.contact.list]]
+[[languages.en.params.contact.list]]
+    class = "twitter"
+    icon = "fa-twitter"
+    url = "//twitter.com/fabidick"
+    title = "@fabidick"
+[[languages.es.params.contact.list]]
     class = "twitter"
     icon = "fa-twitter"
     url = "//twitter.com/fabidick"
     title = "@fabidick"
 
-[languages]
+# Education section
+[languages.en.params.education]
+    enable = true
+    title = "Education"
+[languages.es.params.education]
+    enable = true
+    title = "Education"
 
-#####################
-## English Version ##
-#####################
-[languages.en]
-    [languages.en.params]
-        author = "fabidick22"
-        title = "Dickson Armijos Resume"
-        description = "Dickon Armijos resume/cv created with Hugo"
+[[languages.en.params.education.list]]
+    degree = "Information Systems and Computing"
+    college = "Universidad Técnica Particular de Loja"
+    dates = "2013 - 2019"
+[[languages.es.params.education.list]]
+    degree = "Sistemas Informáticos y Computación"
+    college = "Universidad Técnica Particular de Loja"
+    dates = "2013 - 2019"
 
-    [languages.en.params.summary]
-        enable = true
-        icon = "fa-user"
-        title = "Career Profile"
-        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+[[languages.en.params.education.list]]
+    degree = "Computer Applications"
+    college = 'Instituto Tecnológico Superior "Primero de Mayo"'
+    dates = "2006 - 2012"
+[[languages.es.params.education.list]]
+    degree = "Aplicaciones Informáticas"
+    college = 'Instituto Tecnológico Superior "Primero de Mayo"'
+    dates = "2006 - 2012"
+
+# Languages section
+[languages.en.params.language]
+    enable = true
+    title = "Languages"
+[languages.es.params.language]
+    enable = true
+    title = "Languages"
+
+[[languages.en.params.language.list]]
+    language = "English"
+    level = "Intermediate"
+[[languages.es.params.language.list]]
+    language = "Inglés"
+    level = "Intermedio"
+
+[[languages.en.params.language.list]]
+    language = "Spanish"
+    level = "Native"
+[[languages.es.params.language.list]]
+    language = "Español"
+    level = "Native"
 
 
-#####################
-## Spanish Version ##
-#####################
-[languages.es]
-    [languages.es.params]
-        author = "fabidick22"
-        title = "Currículum de Dickon Armijos"
-        description = "Currículum de Dickon Armijos creado con Hugo"
+# Interests section
+[languages.en.params.interests]
+    enable = true
+    title = "Interests"
+[languages.es.params.interests]
+    enable = true
+    title = "Interests"
 
-    [languages.es.params.summary]
-        enable = true
-        icon = "fa-user"
-        title = "Perfil"
-        summary = "**Resume de tu carrera aquí** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+[[languages.en.params.interests.list]]
+    interest = "Listening to music"
+[[languages.es.params.interests.list]]
+    interest = "Escuchar música"
+
+[[languages.en.params.interests.list]]
+    interest = "Reading"
+[[languages.es.params.interests.list]]
+    interest = "Lectura"
+
+[[languages.en.params.interests.list]]
+    interest = "Cooking"
+[[languages.es.params.interests.list]]
+    interest = "Cocinar"
+
+[[languages.en.params.interests.list]]
+    interest = "Digital art"
+[[languages.es.params.interests.list]]
+    interest = "Arte digital"
+
+# Downloads section
+[languages.en.params.downloads]
+    enable = true
+    title = "Downloads"
+[languages.es.params.downloads]
+    enable = true
+    title = "Downloads"
+
+[[languages.en.params.downloads.list]]
+    name = "CV / Resume"
+    icon = "fa-file-pdf-o"
+    filepath = "/path/to/resume.pdf"
+[[languages.es.params.downloads.list]]
+    name = "CV / Resume"
+    icon = "fa-file-pdf-o"
+    filepath = "/path/to/resume.pdf"
+
+# Main body sections
+# Summary section
+[languages.en.params.summary]
+    enable = true
+    icon = "fa-user"
+    title = "Career Profile"
+    keywordsAsTags = true
+    summary = "**DevOps engineer** with experience in designing, building and maintaining core infrastructure based on DevOps principles (process automation, IaC, system monitoring, continuous delivery, CI/CD pipeline implementation) and with knowledge of IT security."
+
+[languages.es.params.summary]
+    enable = true
+    icon = "fa-user"
+    title = "Career Profile"
+    keywordsAsTags = true
+    summary = "**Ingeniero de DevOps** con experiencia en diseñar, construir y mantener la infraestructura central con base en los principios de DevOps (automatización de procesos, IaC, monitoreo de sistemas, entrega continua, implementación de tuberías CI/CD) y con conocimientos de seguridad informática."
+
+# Experiences section
+[languages.en.params.experiences]
+    enable = true
+    icon = "fa-briefcase"
+    title = "Experiences"
+[languages.es.params.experiences]
+    enable = true
+    icon = "fa-briefcase"
+    title = "Experiences"
+
+[[languages.en.params.jobs.list]]
+position = "DevOps Engineer"
+dates = "09/2020 - Present"
+company = "Avalith"
+details = '''As part of <br />the Avalith team I <br/><br/>have had the opportunity to work on multiple projects performing various activities:\
+    Building infrastructure as code (IaC) with Terraform on different cloud providers such as AWS and Azure.\
+    System monitoring (CloudWatch, TrueSight, FluentBit).\
+    Create serverless architecture on AWS (AWS Lambda, DynamoDB, S3, API Gateway, SNS, SES).\
+    Administration of GNU/Linux servers (Shell Script, Salt).\
+    **Other technologies**:\
+    - AWS ECS, Cognito, ECR, CloudFront, VPC, EC2, Elastic Beanstalk, Secret Manager, Router 53, AWS Certificate Manager, AWS RDS\
+    - Azure Postgresql, VM, NSG, Application Gateway\
+    - Kubernetes, EKS\
+    - Apache, Nginx\
+    - Jenkins, GitHub Actions\
+    - Ansible\
+    - Docker, Docker Compose, GNU/Linux
+    '''
+[[languages.es.params.jobs.list]]
+position = "Ingeniero de DevOps"
+dates = "09/2020 - Actualmente"
+company = "Avalith"
+details = '''Como parte del equipo de Avalith he tenido la oportunidad de trabajar en múltiples proyectos realizando varias actividades:\
+    Crear infraestructura como código (IaC) con Terraform en diferentes proveedores de nube como AWS y Azure.\
+    Monitoreo de sistemas (CloudWatch, TrueSight, FluentBit).\
+    Crear arquitectura serverless en AWS (AWS Lambda, DynamoDB, S3, API Gateway, SNS, SES).\
+    Administración de servidores GNU/Linux (Shell Script, Salt).\
+    **Otras tecnologías**:\
+    - AWS ECS, Cognito, ECR, CloudFront, VPC, EC2, Elastic Beanstalk, Secret Manager, Router 53, AWS Certificate Manager, AWS RDS\
+    - Azure Postgresql, VM, NSG, Application Gateway\
+    - Kubernetes, EKS\
+    - Apache, Nginx\
+    - Jenkins, GitHub Actions\
+    - Ansible\
+    - Docker, Docker Compose, GNU/Linux
+    '''
+
+[[languages.en.params.jobs.list]]
+    position = "DevOps Engineer/SecDevOps"
+    dates = "04/2019 - 09/2020"
+    company = "IOET, Inc."
+    details = '''As part of the DevOps team at IOET support in different projects that were deployed in different cloud providers (AWS, Azure, Google) in which perform multiple activities:\
+    Work with microservices oriented architectures (Kubernetes, Docker, ECS AWS, Azure App Service).\
+    Work with Serverless architectures (API Gateway, AWS Lambda, AWS Cognito, S3, CloudWatch).\
+    Implement CI/CD pipelines, GitOps.\
+    Build infrastructure as code (IaC) with CloudFormation, Terraform, ARM Azure.\
+    Process automation with Python.\
+    Implement security to CI/CD pipelines (SecDevOps, SonarCloud, OWASP).\
+    **Other technologies**:\
+    - MongoDB, PostgreSQL\
+    - AWS Amplify, Router 53, AWS Certificate Manager, Secret Manager\
+    - GCP Cloud Run, GCR, GCP Secret Manager, GCP IAM\
+    - Python, Flask\
+    - Docker, GNU/Linux
+    '''
+[[languages.es.params.jobs.list]]
+    position = "Ingeniero de DevOps/SecDevOps"
+    dates = "04/2019 - 09/2020"
+    company = "IOET, Inc."
+    details = '''Como parte del equipo de DevOps de IOET apoye en diferentes proyectos que fueron desplegados en diferentes proveedores de nube (AWS, Azure, Google) en los cuales realice múltiples actividades:\
+    Trabajar con arquitecturas orientadas a microservicios (Kubernetes, Docker, ECS AWS, Azure App Service).\
+    Trabajar con arquitecturas Serverless (API Gateway, AWS Lambda, AWS Cognito, S3, CloudWatch).\
+    Implementar tuberías de CI/CD, GitOps.\
+    Crear infraestructura como código (IaC) con CloudFormation, Terraform, ARM Azure.\
+    Automatización de procesos con Python.\
+    Implementar seguridad a tuberías de CI/CD (SecDevOps, SonarCloud, OWASP).\
+    **Otras tecnologías**:\
+    - MongoDB, PostgreSQL\
+    - AWS Amplify, Router 53, AWS Certificate Manager, Secret Manager\
+    - GCP Cloud Run, GCR, GCP Secret Manager, GCP IAM\
+    - Python, Flask\
+    - Docker, GNU/Linux
+    '''
+
+[[languages.en.params.jobs.list]]
+    position = "Web developer"
+    dates = "10/2017 - 04/2018"
+    company = "KEA Electronics"
+    details = '''With KEA Electronics I performed different activities as a backend and frontend developer.\
+    Development with JHipster (HTML, Sass, Angular, Java).\
+    Python Development (Django, Django-CMS, PostgreSQL).\
+    Mobile development with Ionic (TypeScript, Angular)
+    '''
+[[languages.es.params.jobs.list]]
+    position = "Desarrollador web"
+    dates = "10/2017 - 04/2018"
+    company = "KEA Electronics"
+    details = '''Con KEA Electronics realice diferentes actividades como desarrollador de backend y frontend.\
+    Desarrollo con JHipster (HTML, Sass, Angular, Java).\
+    Desarrollo con Python (Django, Django-CMS, PostgreSQL).\
+    Desarrollo móvil con Ionic (TypeScript, Angular)
+    '''
+
+[[languages.en.params.jobs.list]]
+    position = "SysAdmin Engineer"
+    dates = "10/2017 - 04/2018"
+    company = "CIDsecure"
+    details = '''Manage GNU/Linux servers.\
+    Manage application server (Django, WSGI, Nginx, Docker, PostgreSQL).\
+    Release Manager.
+    '''
+[[languages.es.params.jobs.list]]
+    position = "Administrador de sistemas"
+    dates = "10/2017 - 04/2018"
+    company = "CIDsecure"
+    details = '''Administrar servidores GNU/Linux.\
+    Administrar servidor de aplicaciones (Django, WSGI, Nginx, Docker, PostgreSQL).\
+    Administrador de versiones.
+    '''
+
+[[languages.en.params.jobs.list]]
+    position = "Web developer"
+    dates = "10/2017 - 04/2018"
+    company = "CIDsecure"
+    details = '''Backend and frontend developer activities:\
+    Backend developer with python (Django, MVC, RESTful API).\
+    Relational database (PostgreSQL, SQLite).\
+    Frontend development with javascript (jQuery, Vue.js, AngularJs).\
+    Mobile development with Ionic.
+    '''
+[[languages.es.params.jobs.list]]
+    position = "Desarrollador web"
+    dates = "10/2017 - 04/2018"
+    company = "CIDsecure"
+    details = '''Actividades de desarrollador de backend y frontend:\
+    Desarrollador de backend con python (Django, MVC, RESTful API).\
+    Base de datos relacionales (PostgreSQL, SQLite).\
+    Desarrollo de frontend con javascript (jQuery, Vue.js, AngularJs).\
+    Desarrollo móvil con Ionic.
+    '''
+
+# Projects section
+[languages.en.params.projects]
+    enable = true
+    icon = "fa-archive"
+    title = "Projects"
+    intro = "I like open source projects, these are some of my open source projects that I work on in my free time."
+[languages.es.params.projects]
+    enable = true
+    icon = "fa-archive"
+    title = "Projects"
+    intro = "Me gustan los proyectos de código abierto, estos son algunos de mis proyectos de código abierto en los cuales trabajo en mi tiempo libre."
+
+[[languages.en.params.projects.list]]
+    gh_repository_url1 = "fabidick22/default-linux-tools"
+[[languages.es.params.projects.list]]
+    gh_repository_url1 = "fabidick22/default-linux-tools"
+
+[[languages.en.params.projects.list]]
+    gh_repository_url1 = "fabidick22/inject-sec-to-devops"
+[[languages.es.params.projects.list]]
+    gh_repository_url1 = "fabidick22/inject-sec-to-devops"
+
+[[languages.en.params.projects.list]]
+    gh_repository_url1 = "fabidick22/aws-serverless-devops"
+[[languages.es.params.projects.list]]
+    gh_repository_url1 = "fabidick22/aws-serverless-devops"
+
+[[languages.en.params.projects.list]]
+    gh_repository_url1 = "fabidick22/hugo-orbit-theme"
+[[languages.es.params.projects.list]]
+    gh_repository_url1 = "fabidick22/hugo-orbit-theme"
+
+[[languages.en.params.projects.list]]
+    gh_repository_url1 = "fabidick22/hp-api"
+[[languages.es.params.projects.list]]
+    gh_repository_url1 = "fabidick22/hp-api"
 
 
+# Skills section
+[languages.en.params.skills]
+    enable = true
+    icon = "fa-rocket"
+    title = "Skills & Proficiency"
+[languages.es.params.skills]
+    enable = true
+    icon = "fa-rocket"
+    title = "Skills & Proficiency"
 
-[params.footer]
-    copyright = "Dickson Armijos"
+[[languages.en.params.skills.list]]
+    skill = "IaC/Configuration Management"
+    level = "90%"
+[[languages.es.params.skills.list]]
+    skill = "IaC /Gestión de la configuración"
+    level = "90%"
+
+[[languages.en.params.skills.list]]
+    skill = "Scripting languages"
+    level = "90%"
+[[languages.es.params.skills.list]]
+    skill = "Lenguajes de scripting"
+    level = "90%"
+
+[[languages.en.params.skills.list]]
+    skill = "Process automation"
+    level = "90%"
+[[languages.es.params.skills.list]]
+    skill = "Automatización de procesos"
+    level = "90%"
+
+[[languages.en.params.skills.list]]
+    skill = "Manage CI/CD pipelines"
+    level = "90%"
+[[languages.es.params.skills.list]]
+    skill = "Administrar tuberías de CI/CD"
+    level = "90%"
+
+[[languages.en.params.skills.list]]
+    skill = "Cloud Architectures"
+    level = "80%"
+[[languages.es.params.skills.list]]
+    skill = "Arquitecturas en nube"
+    level = "80%"
+
+[[languages.en.params.skills.list]]
+    skill = "Release manager"
+    level = "70%"
+[[languages.es.params.skills.list]]
+    skill = "Administrador de versiones"
+    level = "70%"
+
+[[languages.en.params.skills.list]]
+    skill = "Microservices architecture"
+    level = "80%"
+[[languages.es.params.skills.list]]
+    skill = "Arquitecturas de microservices"
+    level = "80%"
+
+[[languages.en.params.skills.list]]
+    skill = "Serverless architecture"
+    level = "75%"
+[[languages.es.params.skills.list]]
+    skill = "Arquitecturas serverless"
+    level = "75%"
+
+[[languages.en.params.skills.list]]
+    skill = "Monitoring systems"
+    level = "80%"
+[[languages.es.params.skills.list]]
+    skill = "Monitoreo de sistemas"
+    level = "80%"
+
+# Certifications section
+[languages.en.params.certificates]
+    enable = true
+    icon = "fa-certificate"
+    title = "Courses & Certificates"
+[languages.es.params.certificates]
+    enable = true
+    icon = "fa-certificate"
+    title = "Courses & Certificates"
+
+[[languages.en.params.certificates.list]]
+    title = "Speaker at the End of Degree Seminar - 2018"
+    url = "assets/images/cert0001.jpg"
+[[languages.es.params.certificates.list]]
+    title = "Ponente en el Seminario de Fin de Titulación - 2018"
+    url = "assets/images/cert0001.jpg"
+
+[[languages.en.params.certificates.list]]
+    title = "CYBERSECURITY ESSENTIALS FROM CISCO NETWORKING ACADEMY - 2018"
+    url = "assets/images/cert0002.jpg"
+[[languages.es.params.certificates.list]]
+    title = "CYBERSECURITY ESSENTIALS DE CISCO NETWORKING ACADEMY - 2018"
+    url = "assets/images/cert0002.jpg"
+
+[[languages.en.params.certificates.list]]
+    title = "Cyber Security from Cisco Networking Academy - 2018"
+    url = "assets/images/cert0003.jpg"
+[[languages.es.params.certificates.list]]
+    title = "Seguridad Cibernética de Cisco Networking Academy - 2018"
+    url = "assets/images/cert0003.jpg"
+
+[[languages.en.params.certificates.list]]
+    title = 'Assistant in the event "INFO DAY ISACA" - 2017'
+    url = "assets/images/cert0004.jpg"
+[[languages.es.params.certificates.list]]
+    title = 'Asistente en el evento "INFO DAY ISACA" - 2017'
+    url = "assets/images/cert0004.jpg"
+
+[[languages.en.params.certificates.list]]
+    title = 'Assistant in the event "CUPA 4ta Edición" - 2015'
+    url = "assets/images/cert0005.jpg"
+[[languages.es.params.certificates.list]]
+    title = 'Asistencia en el evento "CUPA 4ta Edición" - 2015'
+    url = "assets/images/cert0005.jpg"
