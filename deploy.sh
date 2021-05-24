@@ -7,7 +7,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
 # hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
-hugo -t hugo-orbit-theme
+hugo -t themes/hugo-orbit-theme
 # Go To Public folder
 cd public
 
