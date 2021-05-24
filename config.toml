@@ -356,29 +356,29 @@ details = '''Como parte del equipo de Avalith he tenido la oportunidad de trabaj
     intro = "Me gustan los proyectos de código abierto, estos son algunos de mis proyectos de código abierto en los cuales trabajo en mi tiempo libre."
 
 [[languages.en.params.projects.list]]
-    gh_repository_url1 = "fabidick22/default-linux-tools"
+    gh_repository_url = "fabidick22/default-linux-tools"
 [[languages.es.params.projects.list]]
-    gh_repository_url1 = "fabidick22/default-linux-tools"
+    gh_repository_url = "fabidick22/default-linux-tools"
 
 [[languages.en.params.projects.list]]
-    gh_repository_url1 = "fabidick22/inject-sec-to-devops"
+    gh_repository_url = "fabidick22/inject-sec-to-devops"
 [[languages.es.params.projects.list]]
-    gh_repository_url1 = "fabidick22/inject-sec-to-devops"
+    gh_repository_url = "fabidick22/inject-sec-to-devops"
 
 [[languages.en.params.projects.list]]
-    gh_repository_url1 = "fabidick22/aws-serverless-devops"
+    gh_repository_url = "fabidick22/aws-serverless-devops"
 [[languages.es.params.projects.list]]
-    gh_repository_url1 = "fabidick22/aws-serverless-devops"
+    gh_repository_url = "fabidick22/aws-serverless-devops"
 
 [[languages.en.params.projects.list]]
-    gh_repository_url1 = "fabidick22/hugo-orbit-theme"
+    gh_repository_url = "fabidick22/hugo-orbit-theme"
 [[languages.es.params.projects.list]]
-    gh_repository_url1 = "fabidick22/hugo-orbit-theme"
+    gh_repository_url = "fabidick22/hugo-orbit-theme"
 
 [[languages.en.params.projects.list]]
-    gh_repository_url1 = "fabidick22/hp-api"
+    gh_repository_url = "fabidick22/hp-api"
 [[languages.es.params.projects.list]]
-    gh_repository_url1 = "fabidick22/hp-api"
+    gh_repository_url = "fabidick22/hp-api"
 
 
 # Skills section
